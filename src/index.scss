@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #000000;
+  font-family: Inter, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background: #E7F6FF;
+}
+
+.wrapper {
+  max-width: 1080px;
+  width: 100%;
+  margin: 50px auto 0 auto;
+  background: #FFFFFF;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #EAEAEA;
+  padding: 45px 60px;
+}
+
+.header_logoWr {
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+  }
+  .header_logoTitle {
+    h2 {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.header_accInfo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  li {
+    display: flex;
+    align-items: center;
+    span {
+      margin-left: 5px;
+    }
+  }
+}
+
+.content {
+  padding: 45px 60px;
+}
+
+.catalog {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-top: 40px;
+
+  .product_card {
+    position: relative;
+    width: 210px;
+    background: #FFFFFF;
+    border: 1px solid #F3F3F3;
+    border-radius: 40px;
+    padding: 25px 25px 35px;
+
+    .product_cardWish {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      cursor: pointer;
+    }
+
+    .product_cardImg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    .product_cardTitle {
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 14px;
+    }
+
+    .product_cardBottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .product_cardPrice {
+        font-weight: 700;
+        font-size: 14px;
+        span {
+          font-weight: 500;
+          font-size: 11px;
+          text-transform: uppercase;
+          color: #BDBDBD;
+        }
+      }
+
+      .product_cardAdd {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
