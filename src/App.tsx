@@ -1,6 +1,72 @@
 function App() {
   return (
     <div className='wrapper'>
+        <div className='drawer_overlay' style={{display: 'none'}}>
+            <div className='drawer'>
+                <div className='drawer_top'>
+                    <h2>
+                        Корзина
+                        <span className='cart_item__remove'>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </h2>
+                </div>
+
+                <div className='drawer_body'>
+                    <div className='cart_item'>
+                        <div className='cart_item__img'>
+                            <img src='img/sneakers/1.jpg' alt='image'/>
+                        </div>
+                        <div className='cart_item__info'>
+                            <h5 className='cart_item__title'>Мужские Кроссовки Nike Air Max 270</h5>
+                            <span className='cart_item__price'><b>12 999 руб.</b></span>
+                        </div>
+                        <div className='cart_item__remove'>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div className='cart_item'>
+                        <div className='cart_item__img'>
+                            <img src='img/sneakers/1.jpg' alt='image'/>
+                        </div>
+                        <div className='cart_item__info'>
+                            <h5 className='cart_item__title'>Мужские Кроссовки Nike Air Max 270</h5>
+                            <span className='cart_item__price'><b>12 999 руб.</b></span>
+                        </div>
+                        <div className='cart_item__remove'>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='drawer_bottom'>
+                    <div className='drawer_bottomBox'>
+                        <span>Итого:</span>
+                        <span className='dashedLine'></span>
+                        <span><b>21 498 руб.</b></span>
+                    </div>
+                    <div className='drawer_bottomBox'>
+                        <span>Налог 5%:</span>
+                        <span className='dashedLine'></span>
+                        <span><b>1074 руб.</b></span>
+                    </div>
+
+                    <div className='btn btn_green drawer_btn'>
+                        Оформить заказ
+                        <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7H14.7143" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.71436 1L14.7144 7L8.71436 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
       <header className='header'>
           <div className='header_logoWr'>
               <img className='header_logo' src='/img/logo.png'/>
@@ -31,7 +97,15 @@ function App() {
           </ul>
       </header>
         <main className='content'>
-            <h1>Все кроссовки</h1>
+           <div className='content_header'>
+               <h1>Все кроссовки</h1>
+               <label className='default_label default_label__search'>
+                   <input type='text' className='default_input search_input' placeholder='Поиск...'/>
+                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M15.25 15.25L11.8855 11.8795L15.25 15.25ZM13.75 7.375C13.75 9.06576 13.0784 10.6873 11.8828 11.8828C10.6873 13.0784 9.06576 13.75 7.375 13.75C5.68424 13.75 4.06274 13.0784 2.86719 11.8828C1.67165 10.6873 1 9.06576 1 7.375C1 5.68424 1.67165 4.06274 2.86719 2.86719C4.06274 1.67165 5.68424 1 7.375 1C9.06576 1 10.6873 1.67165 11.8828 2.86719C13.0784 4.06274 13.75 5.68424 13.75 7.375V7.375Z" stroke="#E4E4E4" stroke-width="2" stroke-linecap="round"/>
+                   </svg>
+               </label>
+           </div>
             <div className='catalog'>
                 <div className='product_card'>
                     <div className='product_cardWish'>
