@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #EAEAEA;
+  padding: 45px 60px;
+
+  .header_logoWr {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 15px;
+      width: 40px;
+      height: 40px;
+    }
+
+    .header_logoTitle {
+      h2 {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .header_accInfo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .card {
+      cursor: pointer;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+
+      span {
+        margin-left: 5px;
+      }
+    }
+  }
+}
