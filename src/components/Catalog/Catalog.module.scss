@@ -1,0 +1,16 @@
+.catalogWr {
+
+  .catalog_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .catalog {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-top: 40px;
+  }
+}

@@ -3,10 +3,10 @@ import { useState }  from 'react'
 import { CardProps } from './Card.props'
 
 
-const Card = ({ title, price, imgUrl, onPlus, onFavorite, id }: CardProps): JSX.Element => {
+const Card = ({ title, price, imgUrl, onPlus, onFavorite, favorited }: CardProps): JSX.Element => {
 
 	const [ isAdded, setIsAdded ] = useState(false)
-	const [ isFavorite, setFavorite ] = useState(false)
+	const [ isFavorite, setFavorite ] = useState(favorited)
 
 	const handleAddCart = () => {
 		onPlus()

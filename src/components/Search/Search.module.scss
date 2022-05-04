@@ -1,0 +1,28 @@
+.search {
+
+  .label_search {
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 18px;
+      transform: translateY(-50%);
+    }
+
+    .item_remove {
+      position: absolute;
+      top: 50%;
+      right: 2px;
+      transform: translateY(-50%);
+      border: initial;
+
+      &:hover {
+        border: initial;
+      }
+
+      &:hover span {
+        background: #000;
+      }
+    }
+  }
+}
